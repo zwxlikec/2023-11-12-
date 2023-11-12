@@ -1,0 +1,168 @@
+#include <stdio.h>
+#include <string.h>
+
+struct BOOK
+{
+	char name[20];
+	int old;
+		};
+
+int main()
+{
+	struct BOOK b1 = {"iloveyou",520};
+	struct BOOK* youknow = &b1;
+	printf("%s\n",youknow->name);
+		}
+
+
+
+/*struct We
+{
+	char name[20];
+	short old;
+		};
+int main()
+{
+	struct We b1 = {"zwxdxr",11};
+	struct We* pb = &b1;
+	printf("%s\n",pb->name);
+	b1.old = 30;
+	printf("%d\n",pb->old);
+
+	return 0;
+		}
+
+
+int main()
+{
+	int a = 10;
+	int* p = &a;
+	//*p = 20;
+	printf("%d\n",sizeof(p));
+	return 0;
+		}
+
+int main()
+{
+	int a = 1,b = 0;
+	while(a<=100)
+	{
+		b+=a;
+		a++;
+
+			}
+	printf("%d\n",b);
+	return 0;
+		}
+
+
+
+#include<math.h>
+int main()
+{
+ int m;	//m=期数
+ double r = 0,c,s;//s=本息总额，c=本金
+ printf("请输入你的存款金额与期限： </x空格/y回车>\n");
+  scanf("%lf%d",&c,&m);
+
+	if(m==3)
+		r=0.026;
+	else if(m==6)
+		r=0.028;
+	else if(m==12)
+		r=0.033;
+	else if(m==24)
+		r=0.0375;
+	else if(m==60)
+		r=0.0475;
+
+
+	if(m==3)
+		r=0.026;
+	if(m==6)
+		r=0.028;
+	if(m==12)
+		r=0.033;
+	if(m==24)
+		r=0.0375;
+	if(m==36)
+		r=0.0425;
+	if(m==60)
+		r=0.0475;
+
+
+   switch(m)
+   {
+   case 3:r=0.026;break;
+    case 6:r=0.028;break;
+   case 12:r=0.033;break;
+     case 24:r=0.0375;break;
+       case 36:r=0.0425;break;
+       default: r=0.0475;
+    
+   }
+   s = c*pow(1+r,m);
+ printf("本息合计金额为：%f\n",s);
+
+   return 0;
+}
+
+
+
+
+
+
+
+int main()
+{
+ int a,b;
+ printf("请输入你的银行卡三位密码<回车>:");//密码110
+	scanf("%d",&a);
+  if(a==110)
+  {
+ printf("\t请选择服务项目\n【改密】<0>\t【查询】<1>\n【转账】<2>\t【取款】<3>\n【电子现金】<4>\t【存款】<5>\n\t\t【取卡】<6>\n\t请输入你的服务项目:");
+	scanf("%d",&b);
+ switch(b)
+{
+ case 0:printf("改密成功\n");break;
+ case 1:printf("查询成功\n");break;
+ case 2:printf("转账成功\n");break;
+ case 3:printf("取款成功\n");break;
+ case 4:printf("电子现金成功\n");break;
+ case 5:printf("存款成功\n");break;
+ case 6:printf("取卡成功\n");break;
+   }
+  }
+  else
+   printf("密码错误");
+   return 0;
+   }
+
+
+
+
+int dxx(int a,int b)
+{	
+	int t;
+	if(a<0&&b<0)
+	{a=-a,b=-b;}
+		if(a<0&&b>0)
+		{a=-a,b=b;}
+			if(a<0&&b>0)
+			{a=a,b=-b;}
+	t = a+b;
+	return t;
+		}
+
+int main()
+{
+	int t,num1,num2;
+	printf("请输入两个数字：");
+	scanf("%d%d",&num1,&num2);
+	t = dxx(num1,num2);
+
+	t=t%2==1?printf("是奇数\n"):printf("是偶数\n");
+   //定义字符=关系式?结果1:结果2;
+   return 0;
+}
+*/
